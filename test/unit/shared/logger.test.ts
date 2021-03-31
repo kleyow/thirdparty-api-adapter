@@ -31,7 +31,6 @@ jest.mock('@mojaloop/central-services-logger', () => ({
 }))
 
 describe('shared/logger', (): void => {
-  afterEach((): typeof jest => jest.clearAllMocks())
   it('should do nothing if no request', (): void => {
     logResponse(null as unknown as RequestLogged)
     expect(logger.info).not.toBeCalled()

@@ -50,7 +50,6 @@ describe('histogram', (): void => {
     })
 
     beforeEach(() => {
-      jest.clearAllMocks()
     })
 
     it('does not call the histogram twice if an error occours', async (): Promise<void> => {

@@ -25,9 +25,6 @@ import inspect from '~/shared/inspect'
 import config from '~/shared/config'
 import util from 'util'
 
-// const inspectSpy = jest.spyOn(util, 'inspect')
-// jest.mock('util')
-
 describe('shared/inspect', (): void => {
   it('should properly call util.inspect', (): void => {
     const inspectSpy = jest.spyOn(util, 'inspect')
@@ -44,6 +41,6 @@ describe('shared/inspect', (): void => {
 
     expect(config).toBeDefined()
     expect(result).toEqual('{}')
-    expect(inspectSpy).toHaveBeenCalledWith({}, false, 4, true)
+    expect(inspectSpy).toHaveBeenCalledWith({}, false, 5, true)
   })
 })

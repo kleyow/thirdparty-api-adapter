@@ -11,7 +11,7 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: ['./src/**/*.ts'],
   coverageReporters: ['json', 'lcov', 'text'],
-  clearMocks: false,
+  clearMocks: true,
   coverageThreshold: {
     global: {
       statements: 90,

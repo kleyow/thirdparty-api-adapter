@@ -73,7 +73,6 @@ const sendRequestConsentRequestsExpected = [
 describe('domain/consentRequests', () => {
   describe('forwardConsentRequestsRequest', () => {
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })
@@ -252,7 +251,6 @@ const sendRequestConsentRequestsIdExpected = [
 describe('domain/consentRequests/{ID}', () => {
   describe('forwardConsentRequestsIdRequest', () => {
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })
@@ -307,7 +305,6 @@ describe('domain/consentRequests/{ID}', () => {
     const path = Enum.EndPoints.FspEndpointTemplates.TP_CONSENT_REQUEST_PUT_ERROR
 
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })

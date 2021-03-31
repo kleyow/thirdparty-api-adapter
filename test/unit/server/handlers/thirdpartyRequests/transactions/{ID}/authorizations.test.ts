@@ -70,7 +70,6 @@ const putAuthRequest = {
 describe('authorizations handler', () => {
   describe('POST /thirdpartyRequests/transactions/{ID}/authorizations', () => {
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })
@@ -142,7 +141,6 @@ describe('authorizations handler', () => {
 
   describe('PUT /thirdpartyRequests/transactions/{ID}/authorizations', () => {
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })

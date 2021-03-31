@@ -92,7 +92,6 @@ const mockForwardConsentRequestsIdRequestExpectedPatch = [
 describe('consentRequests handler', () => {
   describe('PUT /consentRequests/{ID}', () => {
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })
@@ -148,7 +147,6 @@ describe('consentRequests handler', () => {
 
   describe('PATCH /consentRequests/{ID}', () => {
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })

@@ -44,7 +44,6 @@ describe('/transactions/{ID} handler', (): void => {
     })
 
     beforeEach((): void => {
-      jest.clearAllMocks()
     })
 
     it('handles a successful request', async (): Promise<void> => {
@@ -116,7 +115,6 @@ describe('/transactions/{ID} handler', (): void => {
     })
 
     beforeEach((): void => {
-      jest.clearAllMocks()
     })
 
     it('handles a successful request', async (): Promise<void> => {

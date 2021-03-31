@@ -45,8 +45,7 @@
      })
 
      beforeEach((): void => {
-       jest.clearAllMocks()
-     })
+      })
 
      const expected = [
        '/consentRequests/{{ID}}/error',

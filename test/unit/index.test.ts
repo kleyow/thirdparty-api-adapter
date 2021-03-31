@@ -78,10 +78,6 @@ describe('index', (): void => {
         mockLoggerError.mockReturnValue(null)
       })
 
-      beforeEach((): void => {
-        jest.clearAllMocks()
-      })
-
       it('POST', async (): Promise<void> => {
         mockForwardTransactionRequest.mockResolvedValueOnce()
         const reqHeaders = Object.assign(trxnRequest.headers, {
@@ -196,10 +192,6 @@ describe('index', (): void => {
         mockLoggerError.mockReturnValue(null)
       })
 
-      beforeEach((): void => {
-        jest.clearAllMocks()
-      })
-
       it('PUT', async (): Promise<void> => {
         mockForwardTransactionRequestError.mockResolvedValueOnce()
         const reqHeaders = Object.assign(trxnRequestError.headers, {
@@ -254,10 +246,6 @@ describe('index', (): void => {
       beforeAll((): void => {
         mockLoggerPush.mockReturnValue(null)
         mockLoggerError.mockReturnValue(null)
-      })
-
-      beforeEach((): void => {
-        jest.clearAllMocks()
       })
 
       it('POST', async (): Promise<void> => {
@@ -372,10 +360,6 @@ describe('index', (): void => {
         mockLoggerError.mockReturnValue(null)
       })
 
-      beforeEach((): void => {
-        jest.clearAllMocks()
-      })
-
       it('PUT', async (): Promise<void> => {
         mockForwardAuthorizationRequest.mockResolvedValueOnce()
         const request = {
@@ -488,10 +472,6 @@ describe('index', (): void => {
         mockLoggerError.mockReturnValue(null)
       })
 
-      beforeEach((): void => {
-        jest.clearAllMocks()
-      })
-
       it('posts successfully', async (): Promise<void> => {
         mockForwardConsentsRequest.mockResolvedValueOnce()
         const request = {
@@ -562,10 +542,6 @@ describe('index', (): void => {
         mockLoggerError.mockReturnValue(null)
       })
 
-      beforeEach((): void => {
-        jest.clearAllMocks()
-      })
-
       it('posts successfully', async (): Promise<void> => {
         mockForwardConsentRequestsRequest.mockResolvedValueOnce()
         const request = {
@@ -634,10 +610,6 @@ describe('index', (): void => {
       beforeAll((): void => {
         mockLoggerPush.mockReturnValue(null)
         mockLoggerError.mockReturnValue(null)
-      })
-
-      beforeEach((): void => {
-        jest.clearAllMocks()
       })
 
       it('puts /consentRequests/{{ID}} web payload successfully', async (): Promise<void> => {
@@ -810,10 +782,6 @@ describe('index', (): void => {
         mockLoggerError.mockReturnValue(null)
       })
 
-      beforeEach((): void => {
-        jest.clearAllMocks()
-      })
-
       it('PUT', async (): Promise<void> => {
         mockForwardConsentRequestsIdErrorRequest.mockResolvedValueOnce()
         const reqHeaders = Object.assign(consentRequestsRequestError.headers, {
@@ -867,10 +835,6 @@ describe('index', (): void => {
       beforeAll((): void => {
         mockLoggerPush.mockReturnValue(null)
         mockLoggerError.mockReturnValue(null)
-      })
-
-      beforeEach((): void => {
-        jest.clearAllMocks()
       })
 
       it('patch /consentRequests/{{ID}} payload successfully', async (): Promise<void> => {
@@ -944,10 +908,6 @@ describe('index', (): void => {
         mockLoggerError.mockReturnValue(null)
       })
 
-      beforeEach((): void => {
-        jest.clearAllMocks()
-      })
-
       it('posts /consents/{{ID}}/generateChallenge payload successfully', async (): Promise<void> => {
         mockForwardConsentsIdGenerateChallengeRequest.mockResolvedValueOnce()
         const request = {
@@ -1017,10 +977,6 @@ describe('index', (): void => {
       beforeAll((): void => {
         mockLoggerPush.mockReturnValue(null)
         mockLoggerError.mockReturnValue(null)
-      })
-
-      beforeEach((): void => {
-        jest.clearAllMocks()
       })
 
       it('puts /consents/{{ID}} payload successfully', async (): Promise<void> => {
@@ -1095,10 +1051,6 @@ describe('index', (): void => {
         mockLoggerError.mockReturnValue(null)
       })
 
-      beforeEach((): void => {
-        jest.clearAllMocks()
-      })
-
       it('GET /accounts/{{ID}}', async (): Promise<void> => {
         mockForwardAccountsIdRequest.mockResolvedValueOnce()
         const request = {
@@ -1132,10 +1084,6 @@ describe('index', (): void => {
       beforeAll((): void => {
         mockLoggerPush.mockReturnValue(null)
         mockLoggerError.mockReturnValue(null)
-      })
-
-      beforeEach((): void => {
-        jest.clearAllMocks()
       })
 
       it('puts /accounts/{{ID}} payload successfully', async (): Promise<void> => {
@@ -1212,10 +1160,6 @@ describe('index', (): void => {
       beforeAll((): void => {
         mockLoggerPush.mockReturnValue(null)
         mockLoggerError.mockReturnValue(null)
-      })
-
-      beforeEach((): void => {
-        jest.clearAllMocks()
       })
 
       it('PUT', async (): Promise<void> => {

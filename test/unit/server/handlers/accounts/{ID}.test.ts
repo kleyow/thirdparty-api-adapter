@@ -59,7 +59,6 @@ const mockForwardGetAccountsIdRequestExpected = [
 describe('accountsId handler', () => {
   describe('GET /accounts/{ID}', () => {
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })
@@ -107,7 +106,6 @@ describe('accountsId handler', () => {
 
   describe('PUT /accounts/{ID}', () => {
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })

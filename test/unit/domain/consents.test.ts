@@ -137,7 +137,6 @@ const sendRequestforwardConsentsIdRequestExpected = [
 describe('domain/consents', () => {
   describe('forwardConsentsRequest', () => {
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })
@@ -290,7 +289,6 @@ describe('domain/consents', () => {
 describe('domain/consents/{ID}', () => {
   describe('forwardConsentsIdRequest', () => {
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })
@@ -450,7 +448,6 @@ describe('domain/consents/{ID}/error', () => {
     const path = Enum.EndPoints.FspEndpointTemplates.TP_CONSENT_PUT_ERROR
 
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })
@@ -500,7 +497,6 @@ describe('domain/consents/{ID}/error', () => {
 describe('domain/consents/{ID}/generateChallenge', () => {
   describe('forwardConsentsIdGenerateChallengeRequest', () => {
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })
@@ -660,7 +656,6 @@ describe('domain/consents/{ID}/generateChallenge/error', () => {
     const path = Enum.EndPoints.FspEndpointTemplates.TP_CONSENT_GENERATE_CHALLENGE_PUT_ERROR
 
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })

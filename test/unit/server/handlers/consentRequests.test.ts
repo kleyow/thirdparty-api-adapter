@@ -66,7 +66,6 @@ const postConsentRequestsRequestExpected = [
 describe('consentRequests handler', () => {
   describe('POST /consentRequests', () => {
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })

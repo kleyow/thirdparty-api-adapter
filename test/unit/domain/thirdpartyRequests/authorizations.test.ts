@@ -46,7 +46,6 @@ describe('domain/authorizations', () => {
     const method = Enum.Http.RestMethods.POST
 
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })
@@ -334,7 +333,6 @@ describe('domain/authorizations', () => {
     const path = Enum.EndPoints.FspEndpointTemplates.TP_TRANSACTION_REQUEST_AUTHORIZATIONS_PUT_ERROR
 
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })
@@ -383,7 +381,6 @@ describe('domain/authorizations', () => {
     const method = Enum.Http.RestMethods.PUT
 
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })

@@ -45,7 +45,6 @@ describe('accounts error handler', (): void => {
     })
 
     beforeEach((): void => {
-      jest.clearAllMocks()
     })
 
     const expected = [

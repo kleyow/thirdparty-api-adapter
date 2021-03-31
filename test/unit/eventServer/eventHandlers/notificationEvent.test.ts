@@ -78,8 +78,6 @@ const exampleMessage: NotificationMessage = {
 }
 
 describe('notificationEvent', () => {
-  beforeEach(() => jest.clearAllMocks())
-
   it('handles mocking an incoming message', async() => {
     const mockTransactionCallback = jest.spyOn(Util, 'temporaryMockTransactionCallback')
     await onEvent(null, exampleMessage)

@@ -66,7 +66,6 @@ const sendRequestAccountsRequestsIdExpected = [
 describe('domain/accounts/{ID}', () => {
   describe('forwardAccountsIdRequest', () => {
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })
@@ -142,7 +141,6 @@ describe('domain/accounts/{ID}', () => {
     const path = Enum.EndPoints.FspEndpointTemplates.TP_ACCOUNTS_PUT_ERROR
 
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })

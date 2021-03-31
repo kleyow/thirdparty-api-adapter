@@ -74,7 +74,6 @@ const mockForwardConsentsIdPutRequestExpected = [
 describe('consentsId handler', () => {
   describe('PUT /consents/{ID}', () => {
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })

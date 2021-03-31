@@ -59,7 +59,6 @@ const mockForwardConsentsIdGenerateChallengeRequestExpectedWeb = [
 describe('consentsIdGenerateChallenge handler', () => {
   describe('POST /consents/{ID}/generateChallenge', () => {
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })

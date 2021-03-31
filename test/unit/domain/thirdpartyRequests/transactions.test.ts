@@ -113,7 +113,6 @@ const sendRequestExpectedKafkaMessage = [
 describe('domain /thirdpartyRequests/transactions', (): void => {
   describe('forwardTransactionRequest', (): void => {
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })
@@ -289,7 +288,6 @@ describe('domain /thirdpartyRequests/transactions', (): void => {
 
   describe('forwardTransactionRequestNotification', (): void => {
     beforeEach((): void => {
-      jest.clearAllMocks()
       mockLoggerPush.mockReturnValue(null)
       mockLoggerError.mockReturnValue(null)
     })
